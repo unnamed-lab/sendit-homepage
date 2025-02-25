@@ -22,7 +22,7 @@ export function Navbar() {
           </Button>
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src=""
+              src="/logo.svg"
               alt="Sendit Logo"
               width={32}
               height={32}
