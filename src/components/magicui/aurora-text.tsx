@@ -21,7 +21,10 @@ export function AuroraText({
 
   return (
     <MotionComponent
-      className={cn("relative inline-flex overflow-hidden", className)}
+      className={cn(
+        "relative inline-flex overflow-hidden bg-clip-text text-transparent bg-gradient-to-r from-neutral-100 to-neutral-100 dark:from-neutral-100 dark:to-neutral-100",
+        className
+      )}
       {...props}
     >
       {children}
