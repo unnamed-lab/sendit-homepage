@@ -1,17 +1,23 @@
-import { Card } from "@/components/ui/card"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
-import { Star } from "lucide-react"
+import { Card } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { Star } from "lucide-react";
 
 interface SellerCardProps {
-  name: string
-  avatar: string
-  rating: number
-  sales: number
-  category: string
+  name: string;
+  avatar: string;
+  rating: number;
+  sales: number;
+  category: string;
 }
 
-export function SellerCard({ name, avatar, rating, sales, category }: SellerCardProps) {
+export function SellerCard({
+  name,
+  avatar,
+  rating,
+  sales,
+  category,
+}: SellerCardProps) {
   return (
     <Card className="p-6 bg-gray-900 border-gray-800">
       <div className="flex items-start gap-4">
@@ -22,9 +28,14 @@ export function SellerCard({ name, avatar, rating, sales, category }: SellerCard
         <div className="flex-1">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-lg font-semibold text-white">{name}</h3>
-            <Badge variant="secondary" className="bg-[#223D40]">
-              Top Seller
-            </Badge>
+            {sales > 1000 && rating > 4 && (
+              <Badge
+                variant="secondary"
+                className="bg-green-600 pointer-events-none"
+              >
+                Top Seller
+              </Badge>
+            )}
           </div>
           <div className="flex items-center gap-4 text-sm text-gray-400">
             <div className="flex items-center">
@@ -37,6 +48,5 @@ export function SellerCard({ name, avatar, rating, sales, category }: SellerCard
         </div>
       </div>
     </Card>
-  )
+  );
 }
-

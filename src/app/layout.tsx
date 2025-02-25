@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Teachers } from "next/font/google";
 import "./globals.css";
+import "@fontsource-variable/teachers";
 
 const teachers = Teachers({
   weight: ["400", "500", "600", "700", "800"],
