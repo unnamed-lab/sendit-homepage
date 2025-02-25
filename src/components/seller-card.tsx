@@ -28,10 +28,10 @@ export function SellerCard({
         <div className="flex-1">
           <div className="flex items-center justify-between mb-2">
             <h3 className="text-lg font-semibold text-white">{name}</h3>
-            {sales > 1000 && rating > 4 && (
+            {sales > 500 && rating > 4 && (
               <Badge
                 variant="secondary"
-                className="bg-green-600 pointer-events-none"
+                className="bg-green-600 text-white pointer-events-none"
               >
                 Top Seller
               </Badge>
