@@ -36,70 +36,70 @@ export default function MarketplacePage() {
   const seller = [
     {
       name: "Seller 1",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.9,
       sales: 1234,
       category: "Trading Strategies",
     },
     {
       name: "Seller 2",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.8,
       sales: 982,
       category: "Design Templates",
     },
     {
       name: "Seller 3",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.7,
       sales: 876,
       category: "Development",
     },
     {
       name: "Seller 4",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.6,
       sales: 1500,
       category: "Smart Contracts",
     },
     {
       name: "Seller 5",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.9,
       sales: 2000,
       category: "NFT Art",
     },
     {
       name: "Seller 6",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.8,
       sales: 1300,
       category: "DeFi Protocols",
     },
     {
       name: "Seller 7",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.7,
       sales: 1100,
       category: "Blockchain Analytics",
     },
     {
       name: "Seller 8",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.9,
       sales: 1800,
       category: "DAO Governance",
     },
     {
       name: "Seller 9",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.6,
       sales: 900,
       category: "Crypto Security",
     },
     {
       name: "Seller 10",
-      avatar: "",
+      avatar: "/profile-icon.svg",
       rating: 4.8,
       sales: 1600,
       category: "Web3 Marketing",
@@ -109,119 +109,131 @@ export default function MarketplacePage() {
   const products = [
     {
       title: "Logo Design Mastery",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/1519088/pexels-photo-1519088.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.8,
       sales: 359,
       author: "Design Pro",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
       trending: true,
       featured: true,
     },
     {
       title: "JavaScript for Beginners",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.7,
       sales: 389,
       author: "Code Master",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
       trending: true,
     },
     {
       title: "Options Trading Simplified",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.9,
       sales: 389,
       author: "Trading Expert",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
       featured: true,
     },
     {
       title: "AI for Everyone",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.8,
       sales: 389,
       author: "AI Guru",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
     },
     {
       title: "Risk Management 101",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.7,
       sales: 389,
       author: "Finance Pro",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
     },
     {
       title: "Web3 Development Basics",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.9,
       sales: 420,
       author: "Blockchain Dev",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
       trending: true,
       featured: true,
     },
     {
       title: "AI for Everyone",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.8,
       sales: 389,
       author: "AI Guru",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
     },
     {
       title: "Risk Management 101",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.7,
       sales: 389,
       author: "Finance Pro",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
     },
     {
       title: "Web3 Development Basics",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.9,
       sales: 420,
       author: "Blockchain Dev",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
       trending: true,
       featured: true,
     },
     {
       title: "AI for Everyone",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/326501/pexels-photo-326501.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.8,
       sales: 389,
       author: "AI Guru",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
     },
     {
       title: "Risk Management 101",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/730547/pexels-photo-730547.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.7,
       sales: 389,
       author: "Finance Pro",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
     },
     {
       title: "Web3 Development Basics",
-      image: "",
+      image:
+        "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=600",
       price: 99,
       rating: 4.9,
       sales: 420,
       author: "Blockchain Dev",
-      authorAvatar: "",
+      authorAvatar: "/profile-icon.svg",
       trending: true,
       featured: true,
     },
@@ -318,7 +330,7 @@ export default function MarketplacePage() {
       {/* Lead Generation Banner */}
       <section className="py-16 ">
         <div className="container flex items-center justify-center mx-auto bg-center bg-cover bg-sendit-new bg-black rounded-xl mt-10 h-[200px] md:h-[250px] shadow-[inset_-90px_70px_90px_rgba(0,0,0,0.1)] overflow-hidden relative">
-          <div className="flex flex-col bg-black/20 backdrop-blur-sm items-center justify-center px-4 lg:px-16 w-full h-full">
+          <div className="flex flex-col bg-black/20 backdrop-blur-sm items-center z-20 justify-center px-4 lg:px-16 w-full h-full">
             <p className="text-white mb-2 flex gap-1 items-center">
               Earn in Crypto
             </p>
@@ -332,7 +344,7 @@ export default function MarketplacePage() {
               Start Selling
             </Button>
           </div>
-          <div className="absolute backdrop-blur-sm top-0 left-0 inset-0 w-full h-full z-10 opacity-20">
+          <div className="absolute backdrop-blur-sm top-0 left-0 inset-0 w-full h-full opacity-20">
             <Image
               src="./btc-icon.svg"
               alt=""

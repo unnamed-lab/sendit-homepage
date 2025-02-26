@@ -20,6 +20,7 @@ export function FeaturedCard({ title, image, price, rating, reviews, href }: Fea
           src={image || "/logo.svg"}
           alt={title}
           fill
+          priority
           className="object-cover transition-transform group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 sm:p-6 flex flex-col justify-end">
