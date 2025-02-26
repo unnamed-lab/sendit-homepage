@@ -1,23 +1,28 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Search, ShoppingCart, Menu, X } from "lucide-react"
-import { useSidebar } from "./sidebar-context"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { useState } from "react"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Search, ShoppingCart, Menu, X } from "lucide-react";
+import { useSidebar } from "./sidebar-context";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useState } from "react";
 
 export function Navbar() {
-  const { toggle } = useSidebar()
-  const [isSearchOpen, setIsSearchOpen] = useState(false)
+  const { toggle } = useSidebar();
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-grey-200 z-40">
       <div className="h-full flex items-center justify-between px-4">
         <div className="flex items-center gap-4">
-          <Button variant="ghost" size="icon" onClick={toggle} className="lg:flex hidden">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={toggle}
+            className="lg:flex hidden"
+          >
             <Menu className="h-5 w-5" />
           </Button>
           <Link href="/" className="flex items-center gap-2">
@@ -28,13 +33,24 @@ export function Navbar() {
               height={32}
               className="w-8 h-8"
             />
-            <span className="text-heading-3 font-bold text-grey-900 hidden sm:inline">SENDIT</span>
+            <span className="text-2xl italic font-extrabold text-grey-900 hidden sm:inline">
+              SENDIT
+            </span>
           </Link>
         </div>
 
         {/* Mobile Search Toggle */}
-        <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsSearchOpen(!isSearchOpen)}>
-          {isSearchOpen ? <X className="h-5 w-5" /> : <Search className="h-5 w-5" />}
+        <Button
+          variant="ghost"
+          size="icon"
+          className="md:hidden"
+          onClick={() => setIsSearchOpen(!isSearchOpen)}
+        >
+          {isSearchOpen ? (
+            <X className="h-5 w-5" />
+          ) : (
+            <Search className="h-5 w-5" />
+          )}
         </Button>
 
         {/* Desktop Search */}
@@ -53,20 +69,32 @@ export function Navbar() {
           }`}
         >
           <div className="relative">
-            <Input placeholder="Search..." className="bg-grey-50 border-grey-200 pr-10 w-full" />
+            <Input
+              placeholder="Search..."
+              className="bg-grey-50 border-grey-200 pr-10 w-full"
+            />
             <Search className="absolute right-3 top-2.5 h-5 w-5 text-grey-400" />
           </div>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
-          <Link href="#" className="text-body-regular text-grey-600 hover:text-grey-900">
+          <Link
+            href="#"
+            className="text-body-regular text-grey-600 hover:text-grey-900"
+          >
             Services
           </Link>
-          <Link href="#" className="text-body-regular text-grey-600 hover:text-grey-900">
+          <Link
+            href="#"
+            className="text-body-regular text-grey-600 hover:text-grey-900"
+          >
             Education
           </Link>
-          <Link href="#" className="text-body-regular text-grey-600 hover:text-grey-900">
+          <Link
+            href="#"
+            className="text-body-regular text-grey-600 hover:text-grey-900"
+          >
             Crypto & Trading
           </Link>
           <Button variant="ghost" className="text-white bg-primary">
@@ -107,6 +135,5 @@ export function Navbar() {
         </Sheet>
       </div>
     </header>
-  )
+  );
 }
-
