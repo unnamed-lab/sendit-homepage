@@ -15,7 +15,7 @@ interface FeaturedCardProps {
 export function FeaturedCard({ title, image, price, rating, reviews, href }: FeaturedCardProps) {
   return (
     <Link href={href}>
-      <Card className="group relative sm:max-md:aspect-[4/3] h-full overflow-hidden from-grey-800 to-gray-900 bg-gradient-to-br border-gray-800">
+      <Card className="group relative sm:max-md:aspect-[4/3] lg:h-full overflow-hidden from-grey-800 to-gray-900 bg-gradient-to-br border-gray-800">
         <Image
           src={image || "/logo.svg"}
           alt={title}

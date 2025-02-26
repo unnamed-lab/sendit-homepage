@@ -333,11 +333,41 @@ export default function MarketplacePage() {
             </Button>
           </div>
           <div className="absolute backdrop-blur-sm top-0 left-0 inset-0 w-full h-full z-10 opacity-20">
-            <Image src="./btc-icon.svg" alt="" className="absolute border-none top-6 right-10" width={70} height={70} />
-            <Image src="./eth-icon.svg" alt="" className="absolute border-none top-1/4 left-1/3" width={70} height={70} />
-            <Image src="./osmo-icon.svg" alt="" className="absolute border-none bottom-16 right-1/4" width={70} height={70} />
-            <Image src="./sol-icon.svg" alt="" className="absolute border-none bottom-4 right-2" width={70} height={70} />
-            <Image src="./usdc-icon.svg" alt="" className="absolute border-none bottom-8 left-36" width={70} height={70} />
+            <Image
+              src="./btc-icon.svg"
+              alt=""
+              className="absolute border-none top-6 right-10"
+              width={70}
+              height={70}
+            />
+            <Image
+              src="./eth-icon.svg"
+              alt=""
+              className="absolute border-none top-1/4 left-1/3"
+              width={70}
+              height={70}
+            />
+            <Image
+              src="./osmo-icon.svg"
+              alt=""
+              className="absolute border-none bottom-16 right-1/4"
+              width={70}
+              height={70}
+            />
+            <Image
+              src="./sol-icon.svg"
+              alt=""
+              className="absolute border-none bottom-4 right-2"
+              width={70}
+              height={70}
+            />
+            <Image
+              src="./usdc-icon.svg"
+              alt=""
+              className="absolute border-none bottom-8 left-36"
+              width={70}
+              height={70}
+            />
           </div>
         </div>
       </section>
@@ -446,8 +476,8 @@ export default function MarketplacePage() {
               </p>
             </div>
           </div>
-          <div className="flex flex-1 gap-4">
-            <div className="relative basis-5/12">
+          <div className="flex flex-1 flex-col lg:flex-row gap-4">
+            <div className="relative lg:basis-5/12">
               <FeaturedCard
                 title="UI/UX Fundamentals"
                 image=""
@@ -457,7 +487,7 @@ export default function MarketplacePage() {
                 href="#"
               />
             </div>
-            <div className="relative basis-7/12">
+            <div className="relative lg:basis-7/12">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {products
                   .filter((_, i) => i < 5)
