@@ -11,7 +11,7 @@ export function Sidebar() {
   return (
     <aside
       className={cn(
-        "fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-grey-100 border-r border-grey-200 transform transition-transform duration-200 ease-in-out z-30",
+        "fixed left-0 top-16 h-[calc(100vh-4rem)] w-64 bg-white border-r border-grey-200 transform transition-transform duration-200 ease-in-out z-30",
         isOpen ? "translate-x-0" : "-translate-x-full",
       )}
     >

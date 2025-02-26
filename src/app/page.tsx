@@ -330,7 +330,7 @@ export default function MarketplacePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products
-              .filter((_, i) => i > 5 && i < 11)
+              .filter((_, i) => i > 5 && i < 10)
               .map((item, i) => (
                 <ProductCard key={i} {...item} />
               ))}
@@ -349,8 +349,8 @@ export default function MarketplacePage() {
             </div>
             <Button
               variant="link"
-              className="text-[#223D40] hover:text-[#3b4f50]"
-            >
+              className="text-primary hover:text-green-600"
+              >
               See All
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
@@ -516,12 +516,15 @@ export default function MarketplacePage() {
       {/* Affiliate Banner */}
       <section className="py-16 ">
         <div className="container flex items-center justify-center mx-auto bg-center bg-cover bg-sendit-banner bg-black rounded-xl mt-10 h-[200px] md:h-[400px] shadow-[inset_-90px_70px_90px_rgba(0,0,0,0.1)] overflow-hidden">
-          <div className="flex flex-col bg-black/30 backdrop-blur-sm items-center justify-center px-4 lg:px-16 w-full h-full">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+          <div className="flex flex-col bg-black/20 backdrop-blur-sm items-center justify-center px-4 lg:px-16 w-full h-full">
+            <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
               Join Our Affiliates Program
             </h2>
             <p className="text-black mb-8">Earn Commissions in Crypto</p>
-            <Button size="lg" className="bg-black hover:bg-primary border-[0.5px] border-grey-400">
+            <Button
+              size="lg"
+              className="bg-black hover:bg-primary border-[0.5px] border-grey-400"
+            >
               Become an Affiliate
             </Button>
           </div>

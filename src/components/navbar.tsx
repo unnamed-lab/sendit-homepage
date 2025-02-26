@@ -69,7 +69,7 @@ export function Navbar() {
           <Link href="#" className="text-body-regular text-grey-600 hover:text-grey-900">
             Crypto & Trading
           </Link>
-          <Button variant="ghost" className="text-grey-600">
+          <Button variant="ghost" className="text-white bg-primary">
             Sign In
           </Button>
           <Button variant="ghost" className="text-grey-600 p-2">
