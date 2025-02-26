@@ -8,7 +8,7 @@ Welcome to my submission for the **Sendit Homepage Design Bounty** on Superteam 
 
 Check out the live demo of my submission here:  
 
-[**Live Demo Link**](https://github.com/unnamed-lab)
+[**Live Demo Link**](https://sendit-homepage.onrender.com)
 
 ---
 
