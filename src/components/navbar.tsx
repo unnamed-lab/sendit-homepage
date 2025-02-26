@@ -15,7 +15,7 @@ export function Navbar() {
   const [showAuthDialog, setShowAuthDialog] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-grey-200 z-40">
+    <header className="fixed top-0 left-0 right-0 h-[68px] bg-white border-b border-grey-200 z-40">
       <div className="h-full flex items-center justify-between bg-white px-4">
         <div className="flex items-center gap-4">
           <Button

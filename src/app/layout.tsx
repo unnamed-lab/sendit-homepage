@@ -4,6 +4,7 @@ import { Teachers } from "next/font/google";
 import "./globals.css";
 import { CartProvider } from "@/contexts/cart-context";
 import { CartSidebar } from "@/components/cart-sidebar";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 
 const teachers = Teachers({
   weight: ["400", "500", "600", "700", "800"],
@@ -25,6 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${teachers.variable} antialiased`}>
+        <ScrollProgress className="top-0 h-1" />
         <CartProvider>
           {children}
           <CartSidebar />
