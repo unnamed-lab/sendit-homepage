@@ -12,7 +12,7 @@ import { AnalyticsCard } from "@/components/analytics-card";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { PlatformCurrency } from "@/components/platform-currency";
 import Image from "next/image";
-// import { ParticlesBackground } from "@/components/particles-background";
+import { ParticlesBackground } from "@/components/particles-background";
 
 export default function MarketplacePage() {
   const revenueData = [
@@ -230,9 +230,8 @@ export default function MarketplacePage() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary via-black to-black border-b border-gray-800 overflow-hidden">
-        {/* <ParticlesBackground /> */}
-        <div className="container relative mx-auto px-4 py-12 sm:py-16 lg:py-20">
+      <section className="relative flex flex-col items-center justify-center bg-gradient-to-br from-primary via-black to-black border-b border-gray-800 overflow-hidden">
+        <div className="container relative mx-auto z-20 text-center px-4 py-12 sm:py-16 lg:py-20">
           <div className="max-w-3xl mx-auto text-center">
             <RainbowButton className="inline-block px-4 py-1 bg-primary/80 rounded-full mb-4 sm:mb-6 text-xs sm:text-sm text-grey-100">
               frictionless digital commerce
@@ -265,6 +264,7 @@ export default function MarketplacePage() {
             </div>
           </div>
         </div>
+        <ParticlesBackground />
       </section>
 
       {/* Top Sellers */}
@@ -332,8 +332,12 @@ export default function MarketplacePage() {
               Start Selling
             </Button>
           </div>
-          <div className="absolute top-0 left-0 inset-0 w-full h-full">
+          <div className="absolute top-0 left-0 inset-0 w-full h-full z-10">
             <Image src="/btc-icon.svg" alt="" width={70} height={70} />
+            <Image src="/eth-icon.svg" alt="" width={70} height={70} />
+            <Image src="/osmo-icon.svg" alt="" width={70} height={70} />
+            <Image src="/sol-icon.svg" alt="" width={70} height={70} />
+            <Image src="/usdc-icon.svg" alt="" width={70} height={70} />
           </div>
         </div>
       </section>

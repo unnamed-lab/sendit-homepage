@@ -1,84 +1,70 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 
 import { useCallback } from "react"
 import Particles from "react-tsparticles"
 import { loadFull } from "tsparticles"
-import type { Engine } from "tsparticles-engine"
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+
 
 export function ParticlesBackground() {
-  const particlesInit = useCallback(async (engine: Engine) => {
+  const particlesInit = useCallback(async (engine: any ) => {
     await loadFull(engine)
   }, [])
 
   return (
+    <>
     <Particles
-      className="absolute inset-0"
-      init={particlesInit}
-      options={{
-        fullScreen: { enable: false },
-        background: {
-          color: {
-            value: "transparent",
+        id="tsparticles"
+        init={particlesInit}
+        width="30svh"
+        options={{
+          background: { color: { value: "transparent" } },
+          fpsLimit: 120,
+          interactivity: {
+            events: {
+              onClick: { enable: true, mode: "push" },
+              onHover: { enable: true, mode: "repulse" },
+              resize: true,
+            },
+            modes: {
+              push: { quantity: 4 },
+              repulse: { distance: 100, duration: 0.4 },
+            },
           },
-        },
-        fpsLimit: 120,
-        interactivity: {
-          events: {
-            onHover: {
+          particles: {
+            color: { value: "#ffffff" },
+            links: { color: "#ffffff", distance: 200, enable: true, opacity: 0.5, width: 1 },
+            move: {
+              direction: "none",
               enable: true,
-              mode: "grab",
+              outModes: { default: "bounce" },
+              random: true,
+              speed: 2,
+              straight: false,
             },
+            number: { density: { enable: true, area: 800 }, value: 60 },
+            opacity: { value: 0.5 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 5 } },
+            
           },
-          modes: {
-            grab: {
-              distance: 140,
-              links: {
-                opacity: 0.5,
-              },
-            },
-          },
-        },
-        particles: {
-          color: {
-            value: "#223D40",
-          },
-          links: {
-            color: "#223D40",
-            distance: 150,
-            enable: true,
-            opacity: 0.3,
-            width: 1,
-          },
-          move: {
-            direction: "none",
-            enable: true,
-            outModes: {
-              default: "bounce",
-            },
-            random: true,
-            speed: 1,
-            straight: false,
-          },
-          number: {
-            density: {
-              enable: true,
-              area: 800,
-            },
-            value: 80,
-          },
-          opacity: {
-            value: 0.5,
-          },
-          shape: {
-            type: "circle",
-          },
-          size: {
-            value: { min: 1, max: 3 },
-          },
-        },
-        detectRetina: true,
-      }}
-    />
+          detectRetina: true,
+          
+        }}
+      />
+      <div className="absolute inset-0 z-10">
+        <Canvas>
+          <OrbitControls enableZoom={false} />
+          <ambientLight intensity={0.5} />
+          <directionalLight position={[-2, 5, 2]} intensity={1} />
+          <Sphere args={[1, 100, 200]} scale={2.5}>
+            <MeshDistortMaterial color="#223D40" attach="material" distort={0.3} speed={1.5} />
+          </Sphere>
+        </Canvas>
+      </div>
+    </>
   )
 }
 
