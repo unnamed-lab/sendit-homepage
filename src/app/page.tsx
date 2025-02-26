@@ -328,13 +328,13 @@ export default function MarketplacePage() {
       </section>
 
       {/* Lead Generation Banner */}
-      <section className="py-16 ">
+      <section className="py-16 px-4">
         <div className="container flex items-center justify-center mx-auto bg-center bg-cover bg-sendit-new bg-black rounded-xl mt-10 h-[200px] md:h-[250px] shadow-[inset_-90px_70px_90px_rgba(0,0,0,0.1)] overflow-hidden relative">
           <div className="flex flex-col bg-black/20 backdrop-blur-sm items-center z-20 justify-center px-4 lg:px-16 w-full h-full">
             <p className="text-white mb-2 flex gap-1 items-center">
               Earn in Crypto
             </p>
-            <h2 className="text-3xl leading-tight md:text-5xl font-bold text-white mb-4">
+            <h2 className="text-2xl leading-tight md:text-5xl font-bold text-white mb-4">
               Start Your Business Today
             </h2>
             <Button
@@ -492,7 +492,7 @@ export default function MarketplacePage() {
             <div className="relative lg:basis-5/12">
               <FeaturedCard
                 title="UI/UX Fundamentals"
-                image=""
+                image="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=600"
                 price={99}
                 rating={4.5}
                 reviews={389}
@@ -548,15 +548,15 @@ export default function MarketplacePage() {
       </section>
 
       {/* Platform Analytics */}
-      <section className="py-16 border-b border-gray-800">
+      <section className="py-16 px-4 border-b border-gray-800">
         <div className="container px-4 mx-auto flex  items-center">
           <h2 className="text-2xl font-bold text-black">Platform Analytics</h2>
         </div>
-        <div className="container flex items-center mx-auto px-4 gap-6">
+        <div className="container flex flex-col lg:flex-row items-center mx-auto px-4 gap-6">
           <div className="lg:basis-1/2">
             <PlatformCurrency />
           </div>
-          <div className="grid grid-cols-2 gap-6 mb-12 lg:basis-1/2">
+          <div className="grid grid-cols-2 gap-2 md:gap-6 mb-12 lg:basis-1/2">
             <AnalyticsCard
               title="Monthly Revenue"
               value="287,493"
@@ -588,13 +588,13 @@ export default function MarketplacePage() {
       </section>
 
       {/* Affiliate Banner */}
-      <section className="py-16 ">
+      <section className="py-16 px-4">
         <div className="container flex items-center justify-center mx-auto bg-center bg-cover bg-sendit-banner bg-black rounded-xl mt-10 h-[200px] md:h-[400px] shadow-[inset_-90px_70px_90px_rgba(0,0,0,0.1)] overflow-hidden">
-          <div className="flex flex-col bg-black/20 backdrop-blur-sm items-center justify-center px-4 lg:px-16 w-full h-full">
-            <h2 className="text-3xl md:text-5xl font-bold text-black mb-4">
+          <div className="flex flex-col bg-white/80 lg:bg-black/20 backdrop-blur-sm items-center justify-center px-4 lg:px-16 w-full h-full lg:gap-1">
+            <h2 className="text-xl md:text-5xl font-bold text-center text-black lg:mb-4">
               Join Our Affiliates Program
             </h2>
-            <p className="text-black mb-8">Earn Commissions in Crypto</p>
+            <p className="text-black lg:mb-4">Earn Commissions in Crypto</p>
             <Button
               size="lg"
               className="bg-black hover:bg-primary border-[0.5px] border-grey-400"

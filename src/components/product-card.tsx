@@ -70,10 +70,10 @@ export function ProductCard({
             </Avatar>
             <span className="text-xs sm:text-sm text-gray-400">{author}</span>
           </div>
-          <h3 className="text-xs sm:text-sm font-semibold text-white mb-2 line-clamp-2">
+          <h3 className="text-base sm:text-sm font-semibold text-white mb-2 line-clamp-2">
             {title}
           </h3>
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
+          <div className="flex flex-row sm:items-center justify-between gap-2 mb-4">
             <div className="flex items-center gap-2">
               <div className="flex items-center">
                 <Star className="h-4 w-4 text-yellow-400" />

@@ -1,8 +1,9 @@
+import Image from "next/image";
 import { OrbitingCircles } from "./magicui/orbiting-circles";
 
 export function PlatformCurrency() {
   return (
-    <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
+    <div className="relative hidden md:flex h-[500px] w-full flex-col items-center justify-center overflow-hidden">
       <OrbitingCircles iconSize={60} radius={180}>
         <Icons.eth />
         <Icons.btc />
@@ -13,6 +14,7 @@ export function PlatformCurrency() {
         <Icons.sol />
         <Icons.atom />
       </OrbitingCircles>
+      <Image src={"/logo.svg"} alt={""} width={70} height={70} className="pointer-events-none" />
     </div>
   );
 }
