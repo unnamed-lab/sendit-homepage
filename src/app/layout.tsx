@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "@fontsource-variable/teachers";
 import { Teachers } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/contexts/cart-context";
+import { CartSidebar } from "@/components/cart-sidebar";
 
 const teachers = Teachers({
   weight: ["400", "500", "600", "700", "800"],
@@ -22,7 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${teachers.variable} antialiased`}>{children}</body>
+      <body className={`${teachers.variable} antialiased`}>
+        <CartProvider>
+          {children}
+          <CartSidebar />
+        </CartProvider>
+      </body>
     </html>
   );
 }

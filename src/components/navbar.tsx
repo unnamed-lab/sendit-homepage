@@ -9,9 +9,11 @@ import { useSidebar } from "./sidebar-context";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 import { AuthDialog } from "./auth-dialog";
+import { useCart } from "@/contexts/cart-context";
 
 export function Navbar() {
   const { toggle } = useSidebar();
+  const { setIsOpen } = useCart();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [showAuthDialog, setShowAuthDialog] = useState(false);
 
@@ -131,7 +133,11 @@ export function Navbar() {
               </Link>
               <div className="flex flex-col gap-2 mt-4">
                 <Button className="w-full">Sign In</Button>
-                <Button variant="outline" className="w-full">
+                <Button
+                  variant="outline"
+                  className="w-full"
+                  onClick={() => setIsOpen(true)}
+                >
                   <ShoppingCart className="h-5 w-5 mr-2" />
                   Cart
                 </Button>
