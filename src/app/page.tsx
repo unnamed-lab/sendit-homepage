@@ -9,7 +9,6 @@ import { DealCard } from "@/components/deal-card";
 import { FeaturedCard } from "@/components/featured-card";
 import { Bot, Box, Book, Palette, Megaphone, Layout } from "lucide-react";
 import { AnalyticsCard } from "@/components/analytics-card";
-import { AuroraText } from "@/components/magicui/aurora-text";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { PlatformCurrency } from "@/components/platform-currency";
 // import { ParticlesBackground } from "@/components/particles-background";
@@ -237,9 +236,11 @@ export default function MarketplacePage() {
             <RainbowButton className="inline-block px-4 py-1 bg-primary/80 rounded-full mb-4 sm:mb-6 text-xs sm:text-sm text-grey-100">
               frictionless digital commerce
             </RainbowButton>
-            <h1 className="text-3xl sm:text-4xl tracking-tighter lg:text-6xl font-bold text-white mb-4 sm:mb-6 relative z-10">
-              Welcome To
-              <AuroraText>The Web3 Marketplace</AuroraText>
+            <h1 className="text-3xl sm:text-4xlr lg:text-6xl font-bold text-white mb-4 sm:mb-6 relative z-10">
+              Welcome To{" "}
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-50">
+                The Web3 Marketplace
+              </span>
             </h1>
             <p className="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 relative z-10">
               {
@@ -350,7 +351,7 @@ export default function MarketplacePage() {
             <Button
               variant="link"
               className="text-primary hover:text-green-600"
-              >
+            >
               See All
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
