@@ -332,12 +332,12 @@ export default function MarketplacePage() {
               Start Selling
             </Button>
           </div>
-          <div className="absolute top-0 left-0 inset-0 w-full h-full z-10">
-            <Image src="/btc-icon.svg" alt="" width={70} height={70} />
-            <Image src="/eth-icon.svg" alt="" width={70} height={70} />
-            <Image src="/osmo-icon.svg" alt="" width={70} height={70} />
-            <Image src="/sol-icon.svg" alt="" width={70} height={70} />
-            <Image src="/usdc-icon.svg" alt="" width={70} height={70} />
+          <div className="absolute backdrop-blur-sm top-0 left-0 inset-0 w-full h-full z-10 opacity-20">
+            <Image src="./btc-icon.svg" alt="" className="absolute border-none top-6 right-10" width={70} height={70} />
+            <Image src="./eth-icon.svg" alt="" className="absolute border-none top-1/4 left-1/3" width={70} height={70} />
+            <Image src="./osmo-icon.svg" alt="" className="absolute border-none bottom-16 right-1/4" width={70} height={70} />
+            <Image src="./sol-icon.svg" alt="" className="absolute border-none bottom-4 right-2" width={70} height={70} />
+            <Image src="./usdc-icon.svg" alt="" className="absolute border-none bottom-8 left-36" width={70} height={70} />
           </div>
         </div>
       </section>
