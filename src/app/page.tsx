@@ -259,7 +259,7 @@ export default function MarketplacePage() {
                 "Buy and sell digital products, trading strategies, and expertise in the world's leading Web3 marketplace"
               }
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+            <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10 px-4">
               <Button
                 size="lg"
                 className="bg-[#223D40] hover:bg-[#3b4f50] w-full sm:w-auto"
