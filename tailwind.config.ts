@@ -218,6 +218,7 @@ export default {
       },
       backgroundImage: {
         "sendit-banner": "url('/sendit-banner.png')",
+        "sendit-new": "url('/newbgsendit.png')",
       },
       keyframes: {
         "accordion-down": {

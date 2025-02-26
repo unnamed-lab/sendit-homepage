@@ -11,6 +11,7 @@ import { Bot, Box, Book, Palette, Megaphone, Layout } from "lucide-react";
 import { AnalyticsCard } from "@/components/analytics-card";
 import { RainbowButton } from "@/components/magicui/rainbow-button";
 import { PlatformCurrency } from "@/components/platform-currency";
+import Image from "next/image";
 // import { ParticlesBackground } from "@/components/particles-background";
 
 export default function MarketplacePage() {
@@ -310,6 +311,29 @@ export default function MarketplacePage() {
               .map((item, i) => (
                 <ProductCard key={i} {...item} />
               ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lead Generation Banner */}
+      <section className="py-16 ">
+        <div className="container flex items-center justify-center mx-auto bg-center bg-cover bg-sendit-new bg-black rounded-xl mt-10 h-[200px] md:h-[250px] shadow-[inset_-90px_70px_90px_rgba(0,0,0,0.1)] overflow-hidden relative">
+          <div className="flex flex-col bg-black/20 backdrop-blur-sm items-center justify-center px-4 lg:px-16 w-full h-full">
+            <p className="text-white mb-2 flex gap-1 items-center">
+              Earn in Crypto
+            </p>
+            <h2 className="text-3xl leading-tight md:text-5xl font-bold text-white mb-4">
+              Start Your Business Today
+            </h2>
+            <Button
+              size="lg"
+              className="bg-black hover:bg-primary border-[0.5px] border-grey-400"
+            >
+              Start Selling
+            </Button>
+          </div>
+          <div className="absolute top-0 left-0 inset-0 w-full h-full">
+            <Image src="/btc-icon.svg" alt="" width={70} height={70} />
           </div>
         </div>
       </section>
