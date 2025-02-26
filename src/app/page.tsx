@@ -537,6 +537,9 @@ export default function MarketplacePage() {
 
       {/* Platform Analytics */}
       <section className="py-16 border-b border-gray-800">
+        <div className="container px-4 mx-auto flex  items-center">
+          <h2 className="text-2xl font-bold text-black">Platform Analytics</h2>
+        </div>
         <div className="container flex items-center mx-auto px-4 gap-6">
           <div className="lg:basis-1/2">
             <PlatformCurrency />

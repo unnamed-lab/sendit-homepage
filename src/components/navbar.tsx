@@ -8,10 +8,12 @@ import { Search, ShoppingCart, Menu, X } from "lucide-react";
 import { useSidebar } from "./sidebar-context";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
+import { AuthDialog } from "./auth-dialog";
 
 export function Navbar() {
   const { toggle } = useSidebar();
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [showAuthDialog, setShowAuthDialog] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 h-16 bg-white border-b border-grey-200 z-40">
@@ -97,7 +99,11 @@ export function Navbar() {
           >
             Crypto & Trading
           </Link>
-          <Button variant="ghost" className="text-white bg-primary">
+          <Button
+            variant="ghost"
+            className="text-white bg-primary"
+            onClick={() => setShowAuthDialog(true)}
+          >
             Sign In
           </Button>
           <Button variant="ghost" className="text-grey-600 p-2">
@@ -133,6 +139,7 @@ export function Navbar() {
             </nav>
           </SheetContent>
         </Sheet>
+        <AuthDialog open={showAuthDialog} onOpenChange={setShowAuthDialog} />
       </div>
     </header>
   );
