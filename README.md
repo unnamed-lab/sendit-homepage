@@ -50,20 +50,6 @@ Sendit is a cutting-edge digital commerce platform designed to help creators mon
 
 ---
 
-## 🖼️ Screenshots
-
-Here are some screenshots of the homepage design:
-
-### Desktop View
-
-![Desktop View](#) *(Replace with your screenshot link)*
-
-### Mobile View
-
-![Mobile View](#) *(Replace with your screenshot link)*
-
----
-
 ## 🚀 How to Run Locally
 
 Follow these steps to run this project on your local machine:
