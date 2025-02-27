@@ -15,14 +15,14 @@ export function CategoryCard({
   title,
   description,
   icon,
-  href
+  href,
 }: CategoryCardProps) {
   return (
     <Link href={href}>
       <Card className="relative h-[180px] sm:h-[200px] overflow-hidden group transition-all hover:border-primary border-grey-100 bg-gradient-to-l from-grey-100 to-white">
         <div className="absolute inset-0">
           <Image
-            src={"/logo.svg"}
+            src={"./logo.svg"}
             alt={title}
             fill
             className="object-cover opacity-10 group-hover:scale-105 transition-transform duration-300"

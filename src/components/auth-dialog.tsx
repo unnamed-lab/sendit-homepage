@@ -51,10 +51,7 @@ export function AuthDialog({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <AnimatePresence mode="wait">
         {open && (
-          <DialogContent
-            className="sm:max-w-md"
-            showClose={false}
-          >
+          <DialogContent className="sm:max-w-md" showClose={false}>
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -91,7 +88,7 @@ export function AuthDialog({
                     transition={{ delay: 0.1 }}
                   >
                     <Image
-                      src="/logo.svg"
+                      src="./logo.svg"
                       alt="Sendit Logo"
                       width={64}
                       height={64}

@@ -37,9 +37,10 @@ export function ProductCard({
       <Card className="group flex flex-col overflow-hidden from-grey-800 to-gray-900 bg-gradient-to-br border-grey-300 transition-all hover:border-[#223D40]">
         <div className="relative aspect-video overflow-hidden">
           <Image
-            src={image || "/logo.svg"}
+            src={image || "./logo.svg"}
             alt={title}
             fill
+            priority
             className="object-cover transition-transform group-hover:scale-105"
           />
           {trending && (

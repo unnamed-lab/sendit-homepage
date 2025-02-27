@@ -117,10 +117,11 @@ export function DealCard() {
                 <div className="flex items-center gap-3">
                   <div className="relative w-12 h-12 bg-gray-100 rounded-md overflow-hidden">
                     <Image
-                      src={product.image || "/logo.svg"}
+                      src={product.image || "./logo.svg"}
                       alt={product.title}
                       fill
                       className="object-cover"
+                      priority
                     />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -151,10 +152,11 @@ export function DealCard() {
                 <div className="flex items-center gap-3">
                   <div className="relative w-12 h-12 bg-gray-100 rounded-md overflow-hidden">
                     <Image
-                      src={product.image || "/logo.svg"}
+                      src={product.image || "./logo.svg"}
                       alt={product.title}
                       fill
                       className="object-cover"
+                      priority
                     />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -185,10 +187,11 @@ export function DealCard() {
                 <div className="flex items-center gap-3">
                   <div className="relative w-12 h-12 bg-gray-100 rounded-md overflow-hidden">
                     <Image
-                      src={product.image || "/logo.svg"}
+                      src={product.image || "./logo.svg"}
                       alt={product.title}
                       fill
                       className="object-cover"
+                      priority
                     />
                   </div>
                   <div className="flex-1 min-w-0">

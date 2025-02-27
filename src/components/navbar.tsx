@@ -18,21 +18,17 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 h-[68px] bg-white border-b border-grey-200 z-40">
       <div className="h-full flex items-center justify-between bg-white px-4">
         <div className="flex items-center gap-4">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggle}
-            className="flex"
-          >
+          <Button variant="ghost" size="icon" onClick={toggle} className="flex">
             <Menu className="h-5 w-5" />
           </Button>
           <Link href="/" className="flex items-center gap-1">
             <Image
-              src="/logo.svg"
+              src="./logo.svg"
               alt="Sendit Logo"
               width={32}
               height={32}
               className="w-8 h-8"
+              priority
             />
             <span className="text-2xl italic font-extrabold text-grey-900 inline">
               SENDIT

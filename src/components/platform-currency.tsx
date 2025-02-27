@@ -14,7 +14,13 @@ export function PlatformCurrency() {
         <Icons.sol />
         <Icons.atom />
       </OrbitingCircles>
-      <Image src={"/logo.svg"} alt={""} width={70} height={70} className="pointer-events-none" />
+      <Image
+        src={"./logo.svg"}
+        alt={""}
+        width={70}
+        height={70}
+        className="pointer-events-none"
+      />
     </div>
   );
 }

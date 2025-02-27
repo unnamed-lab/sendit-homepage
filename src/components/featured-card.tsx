@@ -1,23 +1,30 @@
-import { Card } from "@/components/ui/card"
-import { Star } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Card } from "@/components/ui/card";
+import { Star } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 interface FeaturedCardProps {
-  title: string
-  image: string
-  price: number
-  rating: number
-  reviews: number
-  href: string
+  title: string;
+  image: string;
+  price: number;
+  rating: number;
+  reviews: number;
+  href: string;
 }
 
-export function FeaturedCard({ title, image, price, rating, reviews, href }: FeaturedCardProps) {
+export function FeaturedCard({
+  title,
+  image,
+  price,
+  rating,
+  reviews,
+  href,
+}: FeaturedCardProps) {
   return (
     <Link href={href}>
       <Card className="group relative sm:max-md:aspect-[4/3] lg:h-full overflow-hidden from-grey-800 to-gray-900 bg-gradient-to-br border-gray-800">
         <Image
-          src={image || "/logo.svg"}
+          src={image || "./logo.svg"}
           alt={title}
           fill
           priority
@@ -52,4 +59,3 @@ export function FeaturedCard({ title, image, price, rating, reviews, href }: Fea
     </Link>
   );
 }
-
