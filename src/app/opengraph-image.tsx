@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
 
-export const alt = "Hyper Market - Sell Everything, Buy Everything";
+export const alt = "Sendit Market - Sell Everything, Buy Everything";
 export const size = {
   width: 1200,
   height: 630,

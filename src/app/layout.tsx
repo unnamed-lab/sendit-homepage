@@ -13,23 +13,23 @@ const teachers = Teachers({
 });
 
 export const metadata: Metadata = {
-  title: "Hyper Market - Sell Everything, Buy Everything",
+  title: "Sendit Market - Sell Everything, Buy Everything",
   description:
-    "Hyper Market, best platform that lets you purchase any digital asset on unbelievable discounts. buy or sell anything with crypto!",
+    "Sendit Market, best platform that lets you purchase any digital asset on unbelievable discounts. buy or sell anything with crypto!",
   openGraph: {
-    title: "Hyper Market - Sell Everything, Buy Everything",
+    title: "Sendit Market - Sell Everything, Buy Everything",
     description:
-      "Hyper Market, best platform that lets you purchase any digital asset on unbelievable discounts. buy or sell anything with crypto!",
+      "Sendit Market, best platform that lets you purchase any digital asset on unbelievable discounts. buy or sell anything with crypto!",
     url: "https://sendit-homepage.onrender.com/",
-    siteName: "Hyper Market",
+    siteName: "Sendit Market",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hyper Market - Sell Everything, Buy Everything",
+    title: "Sendit Market - Sell Everything, Buy Everything",
     description:
-      "Hyper Market, best platform that lets you purchase any digital asset on unbelievable discounts. buy or sell anything with crypto!",
+      "Sendit Market, best platform that lets you purchase any digital asset on unbelievable discounts. buy or sell anything with crypto!",
     creator: "@SenditMarkets",
     site: "@SenditMarkets",
   },
