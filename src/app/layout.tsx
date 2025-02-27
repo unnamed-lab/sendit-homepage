@@ -13,6 +13,14 @@ const teachers = Teachers({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sendit-homepage.onrender.com"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "de-DE": "/de-DE",
+    },
+  },
   title: "Sendit Market - Sell Everything, Buy Everything",
   description:
     "Sendit Market, best platform that lets you purchase any digital asset on unbelievable discounts. buy or sell anything with crypto!",
@@ -20,8 +28,9 @@ export const metadata: Metadata = {
     title: "Sendit Market - Sell Everything, Buy Everything",
     description:
       "Sendit Market, best platform that lets you purchase any digital asset on unbelievable discounts. buy or sell anything with crypto!",
-    url: "https://sendit-homepage.onrender.com/",
+    url: "https://sendit-homepage.onrender.com",
     siteName: "Sendit Market",
+    images: "/og-image.png",
     locale: "en_US",
     type: "website",
   },
