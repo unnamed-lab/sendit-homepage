@@ -19,7 +19,7 @@ export function CategoryCard({
 }: CategoryCardProps) {
   return (
     <Link href={href}>
-      <Card className="relative h-[180px] sm:h-[200px] overflow-hidden group transition-all hover:border-primary border-grey-100 bg-gradient-to-l from-grey-100 to-white">
+      <Card className="relative h-[180px] sm:h-[200px] overflow-hidden group transition-all hover:border-primary border-grey-100 bg-gradient-to-l hover:from-primary/40 from-grey-100 to-white">
         <div className="absolute inset-0">
           <Image
             src={"./logo.svg"}

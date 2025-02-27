@@ -40,6 +40,7 @@ export default function MarketplacePage() {
       rating: 4.9,
       sales: 1234,
       category: "Trading Strategies",
+      url: "#",
     },
     {
       name: "Seller 2",
@@ -47,6 +48,7 @@ export default function MarketplacePage() {
       rating: 4.8,
       sales: 982,
       category: "Design Templates",
+      url: "#",
     },
     {
       name: "Seller 3",
@@ -54,6 +56,7 @@ export default function MarketplacePage() {
       rating: 4.7,
       sales: 876,
       category: "Development",
+      url: "#",
     },
     {
       name: "Seller 4",
@@ -61,6 +64,7 @@ export default function MarketplacePage() {
       rating: 4.6,
       sales: 1500,
       category: "Smart Contracts",
+      url: "#",
     },
     {
       name: "Seller 5",
@@ -68,6 +72,7 @@ export default function MarketplacePage() {
       rating: 4.9,
       sales: 2000,
       category: "NFT Art",
+      url: "#",
     },
     {
       name: "Seller 6",
@@ -75,6 +80,7 @@ export default function MarketplacePage() {
       rating: 4.8,
       sales: 1300,
       category: "DeFi Protocols",
+      url: "#",
     },
     {
       name: "Seller 7",
@@ -82,6 +88,7 @@ export default function MarketplacePage() {
       rating: 4.7,
       sales: 1100,
       category: "Blockchain Analytics",
+      url: "#",
     },
     {
       name: "Seller 8",
@@ -89,6 +96,7 @@ export default function MarketplacePage() {
       rating: 4.9,
       sales: 1800,
       category: "DAO Governance",
+      url: "#",
     },
     {
       name: "Seller 9",
@@ -96,6 +104,7 @@ export default function MarketplacePage() {
       rating: 4.6,
       sales: 900,
       category: "Crypto Security",
+      url: "#",
     },
     {
       name: "Seller 10",
@@ -103,6 +112,7 @@ export default function MarketplacePage() {
       rating: 4.8,
       sales: 1600,
       category: "Web3 Marketing",
+      url: "#",
     },
   ];
 
@@ -250,7 +260,7 @@ export default function MarketplacePage() {
             </RainbowButton>
             <h1 className="text-3xl sm:text-4xlr lg:text-6xl font-bold text-white mb-4 sm:mb-6 relative z-10">
               Welcome To{" "}
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-50">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-50 opacity-80">
                 The Web3 Marketplace
               </span>
             </h1>
@@ -260,19 +270,23 @@ export default function MarketplacePage() {
               }
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10 px-4">
-              <Button
-                size="lg"
-                className="bg-[#223D40] hover:bg-[#3b4f50] w-full sm:w-auto"
-              >
-                Start Selling
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-gray-700 text-gray-800 w-full sm:w-auto"
-              >
-                Explore Products
-              </Button>
+              <Link href="#">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-[#3b4f50] w-full sm:w-auto"
+                >
+                  Start Selling
+                </Button>
+              </Link>
+              <Link href="#">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-gray-700 text-gray-800 w-full sm:w-auto"
+                >
+                  Explore Products
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -284,13 +298,15 @@ export default function MarketplacePage() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-2xl font-bold text-black">Top Sellers</h2>
-            <Button
-              variant="link"
-              className="text-primary hover:text-green-600"
-            >
-              View All
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="#">
+              <Button
+                variant="link"
+                className="text-primary hover:text-green-600"
+              >
+                View All
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {seller
@@ -309,13 +325,15 @@ export default function MarketplacePage() {
             <h2 className="text-2xl font-bold text-black">
               Trending in Trading
             </h2>
-            <Button
-              variant="link"
-              className="text-primary hover:text-green-600"
-            >
-              See all
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="#">
+              <Button
+                variant="link"
+                className="text-primary hover:text-green-600"
+              >
+                See all
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products
@@ -337,12 +355,14 @@ export default function MarketplacePage() {
             <h2 className="text-2xl leading-tight md:text-5xl font-bold text-white mb-4">
               Start Your Business Today
             </h2>
-            <Button
-              size="lg"
-              className="bg-black hover:bg-primary border-[0.5px] border-grey-400"
-            >
-              Start Selling
-            </Button>
+            <Link href="#">
+              <Button
+                size="lg"
+                className="bg-black hover:bg-primary border-[0.5px] border-grey-400"
+              >
+                Start Selling
+              </Button>
+            </Link>
           </div>
           <div className="absolute backdrop-blur-sm top-0 left-0 inset-0 w-full h-full opacity-20">
             <Image
@@ -391,13 +411,15 @@ export default function MarketplacePage() {
             <h2 className="text-2xl font-bold text-black">
               Hot Design Templates
             </h2>
-            <Button
-              variant="link"
-              className="text-primary hover:text-green-600"
-            >
-              See all
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="#">
+              <Button
+                variant="link"
+                className="text-primary hover:text-green-600"
+              >
+                See all
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products
@@ -418,13 +440,15 @@ export default function MarketplacePage() {
                 Explore Categories
               </h2>
             </div>
-            <Button
-              variant="link"
-              className="text-primary hover:text-green-600"
-            >
-              See All
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="#">
+              <Button
+                variant="link"
+                className="text-primary hover:text-green-600"
+              >
+                See All
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <CategoryCard
@@ -529,13 +553,15 @@ export default function MarketplacePage() {
             <h2 className="text-2xl font-bold text-black">
               Essential How-To Guides
             </h2>
-            <Button
-              variant="link"
-              className="text-primary hover:text-green-600"
-            >
-              See all
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <Link href="#">
+              <Button
+                variant="link"
+                className="text-primary hover:text-green-600"
+              >
+                See all
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {products
@@ -595,12 +621,14 @@ export default function MarketplacePage() {
               Join Our Affiliates Program
             </h2>
             <p className="text-black lg:mb-4">Earn Commissions in Crypto</p>
-            <Button
-              size="lg"
-              className="bg-black hover:bg-primary border-[0.5px] border-grey-400"
-            >
-              Become an Affiliate
-            </Button>
+            <Link href="#">
+              <Button
+                size="lg"
+                className="bg-black hover:bg-primary border-[0.5px] border-grey-400"
+              >
+                Become an Affiliate
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -613,17 +641,17 @@ export default function MarketplacePage() {
               <h3 className="text-black font-bold mb-4">SENDIT ZONE</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     Careers
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     Blog
                   </Link>
                 </li>
@@ -633,12 +661,12 @@ export default function MarketplacePage() {
               <h3 className="text-black font-bold mb-4">MAKE MONEY WITH US</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     Sell Products
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     Affiliate Program
                   </Link>
                 </li>
@@ -648,17 +676,17 @@ export default function MarketplacePage() {
               <h3 className="text-black font-bold mb-4">CONNECT WITH US</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     Twitter
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     Discord
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     LinkedIn
                   </Link>
                 </li>
@@ -668,12 +696,12 @@ export default function MarketplacePage() {
               <h3 className="text-black font-bold mb-4">LEGAL</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-gray-900 hover:text-black">
+                  <Link href="#" className="footer-link">
                     Terms of Service
                   </Link>
                 </li>

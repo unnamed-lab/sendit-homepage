@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Star } from "lucide-react";
+import Link from "next/link";
 
 interface SellerCardProps {
   name: string;
@@ -9,6 +10,7 @@ interface SellerCardProps {
   rating: number;
   sales: number;
   category: string;
+  url: string
 }
 
 export function SellerCard({
@@ -17,8 +19,10 @@ export function SellerCard({
   rating,
   sales,
   category,
+  url
 }: SellerCardProps) {
   return (
+    <Link href={url}>
     <Card className="p-6 bg-gray-900 border-gray-800">
       <div className="flex items-start gap-4">
         <Avatar className="h-12 w-12">
@@ -48,5 +52,6 @@ export function SellerCard({
         </div>
       </div>
     </Card>
+    </Link>
   );
 }
